@@ -7,6 +7,7 @@ Link to the dataset: https://cloud.minesparis.psl.eu/index.php/s/qurl3oySgTmT85M
 BatvisionV1 and BatvisionV2 have csv files to separate training, validation and test split.
 
 In BatvisionV1 all data is listed in BatvisionV1/train.csv, val.csv and test.csv
+
 In BatvisionV2 each location has a separate folder and within there are train.csv, val.csv and test.csv files to use
 
 ## License
