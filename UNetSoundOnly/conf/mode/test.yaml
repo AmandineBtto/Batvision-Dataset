@@ -1,0 +1,11 @@
+# Test Settings
+mode: test
+experiment_name: # Experiment name to load
+
+eval_on: test # Evaluation on 'test' or 'val' set
+checkpoints: 50 # Epoch to load
+criterion: L1 # Criterion for evaluation
+stat_dir: ./eval/ # Folder to save evaluation results
+
+num_threads: 4
+batch_size: 1

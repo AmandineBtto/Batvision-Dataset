@@ -1,0 +1,16 @@
+
+defaults:
+  - dataset: batvisionv1 # Choice of dataset
+  - mode: test # "train" or "test"
+  - model: unet_baseline # Choice of model
+  - _self_
+
+
+# Hydra settings
+hydra:
+    run:
+        dir: outputs/${model.name}_configs/${dataset.name}/${mode.mode}_${mode.experiment_name}/${now:%H-%M-%S}
+    output_subdir: configfile
+    
+
+

@@ -1,0 +1,2 @@
+name: unet_baseline
+generator: unet_256 # unet_256 or unet_128

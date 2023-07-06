@@ -1,0 +1,12 @@
+name: batvisionv1
+dataset_dir: # path to BV1 data 
+annotation_file_train: train.csv 
+annotation_file_val: val.csv
+annotation_file_test: test.csv
+
+# transform parameters
+audio_format: spectrogram # Audio processing. Can be 'spectrogram' or 'waveform'
+preprocess: resize # 'resize' or None
+depth_norm: True # Normalize depth using max_depth value
+images_size: 256 # Image size if resize
+max_depth: 12.0 # Maximum depth value in meters
