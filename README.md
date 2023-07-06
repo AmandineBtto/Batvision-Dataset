@@ -1,6 +1,6 @@
 # Audio-Visual Batvision Dataset
 
-This repository contains the official codebase for "The Audio-Visual BatVision Dataset for Research on Sight and Sound" (IROS, 2023)
+This repository contains the official codebase for "The Audio-Visual BatVision Dataset for Research on Sight and Sound" (accepted to IROS 2023)
 
 [Project Page](https://amandinebtto.github.io/Batvision-Dataset/)
 
