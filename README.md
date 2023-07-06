@@ -1,6 +1,10 @@
 # Audio-Visual Batvision Dataset
- 
-Link to the dataset: https://cloud.minesparis.psl.eu/index.php/s/qurl3oySgTmT85M
+
+This repository contains the official codebase for "The Audio-Visual BatVision Dataset for Research on Sight and Sound" (IROS, 2023)
+
+[Project Page](https://amandinebtto.github.io/Batvision-Dataset/)
+
+[Dataset Download Link](https://cloud.minesparis.psl.eu/index.php/s/qurl3oySgTmT85M)
 
 ## Usage
 
