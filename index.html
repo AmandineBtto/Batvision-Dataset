@@ -1,0 +1,318 @@
+<script src="http://www.google.com/jsapi" type="text/javascript"></script> 
+<script type="text/javascript">google.load("jquery", "1.3.2");</script>
+
+<html>
+<head>
+    <title>The Audio-Visual BatVision Dataset for Research on Sight and Sound</title>
+    <meta property="og:image" content=images/teaser.png"/> <!-- Facebook automatically scrapes this. Go to https://developers.facebook.com/tools/debug/ if you update and want to force Facebook to rescrape. -->
+    <meta property="og:title" content="The Audio-Visual BatVision Dataset for Research on Sight and Sound" />
+    <meta property="og:description" content="A. Brunetto*, S. Hornauer*, S. Yu, F. Moutarde. IROS 2023" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- webpage template-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- model-viewer css -->
+    <link rel="stylesheet" href="assets/css/demo-style.css">
+
+</head>
+
+<body>
+    <br>
+    <!-- <center> -->
+    <center>
+        <span style="font-size:38px">The Audio-Visual BatVision Dataset for Research on Sight and Sound</span>
+    </center>
+    <br><br>
+    <table align=center width=60%>
+        <tr>
+            <td align=center width=25%>
+                <center>
+                    <span style="font-size:20px"><a href="">Amandine Brunetto</a><span style="font-size: small; vertical-align: text-top;">1</span>*</span>
+                </center>
+            </td>
+            <td align=center width=25%>
+                <center>
+                    <span style="font-size:20px"><a href="">Sascha Hornauer</a><span style="font-size: small; vertical-align: text-top;">1</span>*</span>
+                </center>
+            </td>
+            <td align=center width=25%>
+                <center>
+                    <span style="font-size:20px"><a href="https://web.eecs.umich.edu/~stellayu/">Stella X. Yu</a><span style="font-size: small; vertical-align: text-top;">2</span></span>
+                </center>
+            </td>
+            <td align=center width=25%>
+                <center>
+                    <span style="font-size:20px"><a href="https://people.minesparis.psl.eu/fabien.moutarde/">Fabien Moutarde</a><span style="font-size: small; vertical-align: text-top;">1</span></span>
+                </center>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <table align=center width=60%>
+        <tr>
+            <td align=center width=100%>
+                <center>
+                    <span style="font-size:20px"><span style="font-size: small; vertical-align: text-top;">1</span>Center for Robotics - Mines Paris, PSL Research University <br> <span style="font-size: small; vertical-align: text-top;">2</span>University of Michigan</span>
+                </center>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <table align=center width=60%>
+        <tr>
+            <td align=center width=100%>
+                <center>
+                    <span style="font-size:20px">IROS 2023</span>
+                </center>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <table align=center width=100%>
+        <tr>
+            <td align=center width=20%>
+                <center>
+                    <span style="font-size:20px"><a href="https://arxiv.org/abs/2303.07257">[ArXiv]</a></span>
+                </center>
+            </td>
+            <td align=center width=20%>
+                <center>
+                    <span style="font-size:20px"><a href="https://github.com/AmandineBtto/Batvision-Dataset">[Code]</a></span>
+                </center>
+            </td>
+        </tr>
+    </table>
+    <!-- <table align=center width=700px>
+        <tr>
+            <td align=center width=100px>
+                <center>
+                    <span style="font-size:20px"></span>
+                </center>
+            </td>
+        </tr>
+    </table> -->
+    <br>
+
+    <table align=center width=80%>
+        <tr>
+            <td width=100%>
+                <center>
+                    <img src="images/title_image_new_AS.jpg" width="100%"></img><br>
+                </center>
+            </td>
+        </tr>
+        <tr>
+        <td width=95%>
+            <center>
+                <br>
+                <span style="font-size:14px"><i>  <b>The BatVision dataset contains large scale audio-visual data from a robots’ perspective.</b> 
+                    For its creation, a robot traversed corridors, offices, lecture halls and driveways at a historic campus and modern office building like a bat, emitting chirping sounds with a speaker. 
+                    A binaural microphone recorded their echoes which carry rich scene information of objects, materials and layout. 
+                    With this paper we provide echoes, camera images and depth maps, shown overlayed on typical scenes on the right. 
+                    Echoes are shown under images. This dataset will help investigate fundamental questions on how sound interacts with spaces, how it can be harnessed for robotic navigation and what in general can be understood about a scene from how it sounds.</i> 
+            </center>
+        </td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+
+    <table align=center width=80%>
+        <center><h1>Abstract</h1></center>
+        <tr>
+            <td>
+                Vision research showed remarkable success in understanding our world, propelled by datasets of images and videos. 
+                Sensor data from radar, LiDAR and cameras supports research in robotics and autonomous driving for at least a decade. 
+                However, while visual sensors may fail in some conditions, sound has recently shown potential to complement sensor data.
+                Simulated room impulse responses (RIR) in 3D apartment-models became a benchmark dataset for the community, fostering a range of audiovisual research. 
+                In simulation, depth is predictable from sound, by learning bat-like perception with a neural network. 
+                Concurrently, the same was achieved in reality by using RGB-D images and echoes of chirping sounds. 
+                Biomimicking bat perception is an exciting new direction but needs dedicated datasets to explore the potential. 
+                Therefore, we collected the BatVision dataset to provide large-scale echoes in complex real-world scenes to the community. 
+                We equipped a robot with a speaker to emit chirps and a binaural microphone to record their echoes. 
+                Synchronized RGB-D images from the same perspective provide visual labels of traversed spaces. 
+                We sampled modern US office spaces to historic French university grounds, indoor and outdoor with large architectural variety. 
+                This dataset will allow research on robot echolocation, general audio-visual tasks and sound phænomena unavailable in simulated data. 
+                We show promising results for audio-only depth prediction and show how state-of- the-art work developed for simulated data can also succeed on our dataset. 
+            </td>
+        </tr>
+    </table>
+    <br><br>
+    <hr>
+
+    <table align=center width=90%>
+        <center>
+            <h1>The BatVision Dataset</h1>
+        </center>
+        <tr>
+            <td width=100%>
+                <center>
+                    <img src="images/JustScenes.jpg" width="100%"></img><br>
+                </center>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                
+                <br>
+                <center>
+                    <span style="font-size:20px"> <a href="https://cloud.minesparis.psl.eu/index.php/s/qurl3oySgTmT85M">[Download Link]</a>  &nbsp;</span>
+                </center>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <br><br>
+                <hr>
+                <center>
+                    <h1>Presentation Video</h1>
+                </center>
+            </td>   
+        </tr>
+
+        <tr>
+            <td width=100%>
+                <div class="row" align="center" width="100%">
+                    <div class="column" float="left">
+                        <video id='videos/IROS23_0785_VI_i.mp4' controls height='400' >
+                            <source src="./videos/IROS23_0785_VI_i.mp4" type="video/mp4" preload="none">
+                        </video>
+                    </div>
+                </div>
+            </td>
+        </tr>
+            
+        <!--
+        <tr>
+            <td width=100%>
+                <div class="row" align="center" width="100%">
+                    <div class="column" float="left">
+                        <video id='videos/static_near.mp4' controls height='200' >
+                            <source src="./videos/static_near.mp4" type="video/mp4" preload="none">
+                        </video>
+                    </div>
+                    <div class="column" float="center">
+                        <video id='videos/static_far.mp4' controls height='200'>
+                            <source src="./videos/static_far.mp4" type="video/mp4" preload="none">
+                        </video>
+                    </div>
+                    <div class="column", float="right">
+                        <video id='videos/motion.mp4' controls height='200'>
+                            <source src="./videos/motion.mp4" type="video/mp4" preload="none">
+                        </video>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    -->
+    </table>
+    <!--
+    <hr>
+
+    <table align=center width=100%>
+        <center>
+            <h1>Talk</h1>
+        </center>
+        <div>
+            <p align="center">
+            <iframe style="width: 70%; height: 60%; min-width:300px" src="https://www.youtube.com/embed/vpcTohC8OOg" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </p>
+        </div>
+    </table>-->
+    <br><br>
+    <hr>
+
+    <table align=center width=80%>
+        <center>
+            <h1>Qualitative Results</h1>
+        </center>
+        <!--
+        <tr>
+            <td width=50%>
+                <center>
+                    <h3> SOTA Audio-Visual Depth Prediction on Real Data </h3>
+                </center>
+            </td>
+            <td width=50%>
+                <center>
+                    <h3> Audio-Only Depth Prediction (U-Net) </h3>
+                </center>
+            </td>
+        </tr>
+        -->
+        <tr>
+            <td width=100%>
+                <div>
+                    <p align="center">
+                        <img src="images/project_page_results.png" width="90%"></img><br>
+                    </p>
+                </div>
+            </td>
+            <!--
+            <td width=50%>
+                <div>
+                    <p align="center">
+                        <img src="images/UnetresultsLegend.jpg" width="90%"></img><br>
+                    </p>
+                </div>
+            </td> -->
+        </tr>
+        <tr>
+            <td>
+                <center>
+                <span style="font-size: 14px;"> <b>Results of two different depth prediction methods on the BatVision Dataset.</b> <br>
+                 (a) State-of-the-art method (Parida et al., 2021). It was originally developped in simulation. <br>
+                 (b) Baseline: U-Net based method using only sound as input.</span>
+                </center>
+            </td>
+        </tr>
+
+    </table>
+    <br><br>
+    <hr>
+
+    <table align=center width=60%>
+        <center><h1>Paper</h1></center>
+        <tr>
+            <td><a href=""><img class="layered-paper-big" style="height:175px" src="./images/frontpage.png"/></a></td>
+            <td><span style="font-size:14pt">Amandine Brunetto*, Sascha Hornauer*, Stella X. Yu, Fabien Moutarde.<br>
+                <b>The Audio-Visual BatVision Dataset for Research on Sight and Sound</b><br>
+                IROS 2023.<br>
+                <!-- (hosted on <a href="#">ArXiv</a>)<br> -->
+                (<a href="https://arxiv.org/abs/2303.07257">Arxiv</a>)<br>
+                <span style="font-size:4pt"><a href=""><br></a>
+                </span>
+            </td>
+        </tr>
+    </table>
+    <br>
+
+    <table align=center width=60%>
+        <tr>
+            <td><span style="font-size:14pt"><center>
+                <a href="./docs/bibtex.txt">[Bibtex]</a>
+            </center></td>
+        </tr>
+    </table>
+
+    <hr>
+    <br>
+
+    <table align=center width=80%>
+        <tr>
+            <td width=80%>
+                <left>
+                    <center><h1>Acknowledgements</h1></center>
+                    The authors acknowledges the support of the French
+                    Agence Nationale de la Recherche (ANR), under grant ANR22-CE94-0003 (projet Omni-BatVision).
+                    The webpage template was originally made by <a href="http://web.mit.edu/phillipi/">Phillip Isola</a> and <a href="http://richzhang.github.io/">Richard Zhang</a> for a <a href="http://richzhang.github.io/colorization/">Colorization</a> project. 
+                </left>
+            </td>
+        </tr>
+    </table>
+
+<br>
+</body>
+</html>
+

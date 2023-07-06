@@ -1,0 +1,8 @@
+@misc{brunetto2023audiovisual,
+      title={The Audio-Visual BatVision Dataset for Research on Sight and Sound}, 
+      author={Amandine Brunetto and Sascha Hornauer and Stella X. Yu and Fabien Moutarde},
+      year={2023},
+      eprint={2303.07257},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO}
+}
