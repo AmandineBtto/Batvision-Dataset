@@ -14,40 +14,51 @@
     <!-- model-viewer css -->
     <link rel="stylesheet" href="assets/css/demo-style.css">
 
+    <link rel="shortcut icon" href="images/logo_institute.png" type="image/x-icon">
+
 </head>
 
 <body>
     <br>
     <!-- <center> -->
     <center>
-        <span style="font-size:38px">The Audio-Visual BatVision Dataset for Research on Sight and Sound</span>
+        <span style="font-size:38px"> <b>The Audio-Visual BatVision Dataset for Research on Sight and Sound</b></span>
     </center>
-    <br><br>
+    <br>
     <table align=center width=60%>
         <tr>
-            <td align=center width=25%>
+            <td align=center width=100%>
                 <center>
-                    <span style="font-size:20px"><a href="">Amandine Brunetto</a><span style="font-size: small; vertical-align: text-top;">1</span>*</span>
-                </center>
-            </td>
-            <td align=center width=25%>
-                <center>
-                    <span style="font-size:20px"><a href="https://scholar.google.com/citations?user=G_dpt9kAAAAJ&hl=fr&oi=ao">Sascha Hornauer</a><span style="font-size: small; vertical-align: text-top;">1</span>*</span>
-                </center>
-            </td>
-            <td align=center width=25%>
-                <center>
-                    <span style="font-size:20px"><a href="https://web.eecs.umich.edu/~stellayu/">Stella X. Yu</a><span style="font-size: small; vertical-align: text-top;">2</span></span>
-                </center>
-            </td>
-            <td align=center width=25%>
-                <center>
-                    <span style="font-size:20px"><a href="https://people.minesparis.psl.eu/fabien.moutarde/">Fabien Moutarde</a><span style="font-size: small; vertical-align: text-top;">1</span></span>
+                    <span style="font-size:20px"><b>IEEE/RSJ IROS 2023</b></span>
                 </center>
             </td>
         </tr>
     </table>
     <br>
+    <table align=center width=80%>
+        <tr>
+            <td align=center width=25%>
+                <center>
+                    <span style="font-size:20px"><a href=""> <b>Amandine Brunetto</b></a><span style="font-size: small; vertical-align: text-top;">1</span>*</span>
+                </center>
+            </td>
+            <td align=center width=25%>
+                <center>
+                    <span style="font-size:20px"><a href=""><b>Sascha Hornauer</b></a><span style="font-size: small; vertical-align: text-top;">1</span>*</span>
+                </center>
+            </td>
+            <td align=center width=25%>
+                <center>
+                    <span style="font-size:20px"><a href="https://web.eecs.umich.edu/~stellayu/"><b>Stella X. Yu</b></a><span style="font-size: small; vertical-align: text-top;">2</span></span>
+                </center>
+            </td>
+            <td align=center width=25%>
+                <center>
+                    <span style="font-size:20px"><a href="https://people.minesparis.psl.eu/fabien.moutarde/"><b>Fabien Moutarde</b></a><span style="font-size: small; vertical-align: text-top;">1</span></span>
+                </center>
+            </td>
+        </tr>
+    </table>
     <table align=center width=60%>
         <tr>
             <td align=center width=100%>
@@ -58,18 +69,14 @@
         </tr>
     </table>
     <br>
-    <table align=center width=60%>
+    <br>
+    <table align=center width=80%>
         <tr>
-            <td align=center width=100%>
+            <td align=center width=20%>
                 <center>
-                    <span style="font-size:20px">accepted IROS 2023</span>
+                    <span style="font-size:20px"><a href="https://ieeexplore.ieee.org/abstract/document/10341715">[Paper]</a></span>
                 </center>
             </td>
-        </tr>
-    </table>
-    <br>
-    <table align=center width=100%>
-        <tr>
             <td align=center width=20%>
                 <center>
                     <span style="font-size:20px"><a href="https://arxiv.org/abs/2303.07257">[ArXiv]</a></span>
@@ -77,7 +84,17 @@
             </td>
             <td align=center width=20%>
                 <center>
-                    <span style="font-size:20px"><a href="https://github.com/AmandineBtto/Batvision-Dataset">[Code]</a></span>
+                    <span style="font-size:20px"><a href="https://github.com/AmandineBtto/Batvision-Dataset">[Code/Dataset]</a></span>
+                </center>
+            </td>
+            <td align=center width=20%>
+                <center>
+                    <span style="font-size:20px"><a href="./docs/Slides_AVBatVisionDataset.pdf">[Slides]</a></span>
+                </center>
+            </td>
+            <td align=center width=20%>
+                <center>
+                    <span style="font-size:20px"><a href="./docs/Poster_AVBatVisionDataset.pdf">[Poster]</a></span>
                 </center>
             </td>
         </tr>
@@ -97,6 +114,7 @@
         <tr>
             <td width=100%>
                 <center>
+                    <br>
                     <img src="images/title_image_new_AS.jpg" width="100%"></img><br>
                 </center>
             </td>
@@ -120,6 +138,24 @@
     <table align=center width=80%>
         <center><h1>Abstract</h1></center>
         <tr>
+            <td width=95%>
+                <center>
+                    <span style="font-size:14px"><i>  Vision research showed remarkable success in understanding our world, propelled by datasets of images and videos. 
+                        Sensor data from radar, LiDAR and cameras supports research in robotics and autonomous driving for at least a decade. 
+                        However, while visual sensors may fail in some conditions, sound has recently shown potential to complement sensor data.
+                        Simulated room impulse responses (RIR) in 3D apartment-models became a benchmark dataset for the community, fostering a range of audiovisual research. 
+                        In simulation, depth is predictable from sound, by learning bat-like perception with a neural network. 
+                        Concurrently, the same was achieved in reality by using RGB-D images and echoes of chirping sounds. 
+                        Biomimicking bat perception is an exciting new direction but needs dedicated datasets to explore the potential. 
+                        Therefore, we collected the BatVision dataset to provide large-scale echoes in complex real-world scenes to the community. 
+                        We equipped a robot with a speaker to emit chirps and a binaural microphone to record their echoes. 
+                        Synchronized RGB-D images from the same perspective provide visual labels of traversed spaces. 
+                        We sampled modern US office spaces to historic French university grounds, indoor and outdoor with large architectural variety. 
+                        This dataset will allow research on robot echolocation, general audio-visual tasks and sound phænomena unavailable in simulated data. 
+                        We show promising results for audio-only depth prediction and show how state-of- the-art work developed for simulated data can also succeed on our dataset. </i> 
+                </center>
+            </td>
+         <!--
             <td>
                 Vision research showed remarkable success in understanding our world, propelled by datasets of images and videos. 
                 Sensor data from radar, LiDAR and cameras supports research in robotics and autonomous driving for at least a decade. 
@@ -135,6 +171,7 @@
                 This dataset will allow research on robot echolocation, general audio-visual tasks and sound phænomena unavailable in simulated data. 
                 We show promising results for audio-only depth prediction and show how state-of- the-art work developed for simulated data can also succeed on our dataset. 
             </td>
+        -->
         </tr>
     </table>
     <br><br>
@@ -174,8 +211,8 @@
             <td width=100%>
                 <div class="row" align="center" width="100%">
                     <div class="column" float="left">
-                        <video id='videos/IROS23_0785_VI_i.mp4' controls height='400' >
-                            <source src="./videos/IROS23_0785_VI_i.mp4" type="video/mp4" preload="none">
+                        <video id='videos/IROS_video_1080p.mp4' controls height='400' >
+                            <source src="./videos/IROS_video_1080p.mp4" type="video/mp4" preload="none">
                         </video>
                     </div>
                 </div>
@@ -278,9 +315,9 @@
             <td><a href=""><img class="layered-paper-big" style="height:175px" src="./images/frontpage.png"/></a></td>
             <td><span style="font-size:14pt">Amandine Brunetto*, Sascha Hornauer*, Stella X. Yu, Fabien Moutarde.<br>
                 <b>The Audio-Visual BatVision Dataset for Research on Sight and Sound</b><br>
-                IROS 2023.<br>
+                2023 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), Detroit, MI, USA, 2023, pp. 1-8, doi: 10.1109/IROS55552.2023.10341715.<br>
                 <!-- (hosted on <a href="#">ArXiv</a>)<br> -->
-                (<a href="https://arxiv.org/abs/2303.07257">Arxiv</a>)<br>
+                (<a href="https://ieeexplore.ieee.org/abstract/document/10341715">Paper</a>)<br>
                 <span style="font-size:4pt"><a href=""><br></a>
                 </span>
             </td>

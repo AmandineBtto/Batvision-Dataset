@@ -1,8 +1,9 @@
-@misc{brunetto2023audiovisual,
-      title={The Audio-Visual BatVision Dataset for Research on Sight and Sound}, 
-      author={Amandine Brunetto and Sascha Hornauer and Stella X. Yu and Fabien Moutarde},
-      year={2023},
-      eprint={2303.07257},
-      archivePrefix={arXiv},
-      primaryClass={cs.RO}
-}
+@INPROCEEDINGS{10341715,
+  author={Brunetto, Amandine and Hornauer, Sascha and Yu, Stella X. and Moutarde, Fabien},
+  booktitle={2023 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}, 
+  title={The Audio-Visual BatVision Dataset for Research on Sight and Sound}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={1-8},
+  doi={10.1109/IROS55552.2023.10341715}}
