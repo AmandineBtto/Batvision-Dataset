@@ -62,7 +62,7 @@ def main(cfg):
  
     model = define_G(cfg, input_nc = 2, output_nc = 1, ngf = 64, netG = cfg.model.generator, norm = 'batch',
                                     use_dropout = False, init_type='normal', init_gain=0.02, gpu_ids = [device])
-    print('Network used:', cfg.mode.generator)
+    #print('Network used:', cfg.mode.generator)
     
     if cfg.mode.criterion == 'L1':
         criterion = nn.L1Loss().to(device)
