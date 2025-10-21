@@ -2,7 +2,7 @@
 
 This repository contains the official codebase for "The Audio-Visual BatVision Dataset for Research on Sight and Sound" (IROS 2023).
 
-[Project Page](https://amandinebtto.github.io/Batvision-Dataset/) | [Dataset](https://cloud.minesparis.psl.eu/index.php/s/qurl3oySgTmT85M) | [Miror Dataset Link](https://entrepot.recherche.data.gouv.fr/dataset.xhtml?persistentId=doi:10.57745/HYLZNL) | [Paper](https://ieeexplore.ieee.org/abstract/document/10341715)
+[Project Page](https://amandinebtto.github.io/Batvision-Dataset/) | [Dataset](https://cloud.minesparis.psl.eu/index.php/s/qurl3oySgTmT85M) | [Mirror Dataset Link](https://entrepot.recherche.data.gouv.fr/dataset.xhtml?persistentId=doi:10.57745/HYLZNL) | [Paper](https://ieeexplore.ieee.org/abstract/document/10341715)
 
 For help contact amandine.brunetto [a.t] minesparis.psl.eu or open an issue.
 
